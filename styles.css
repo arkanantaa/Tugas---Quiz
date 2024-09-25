@@ -1,0 +1,100 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: black !important; 
+}
+
+section {
+    background-color: black; /* Ensures that all sections are black */
+    color: white; /* Ensures that text is visible */
+}
+
+/* Navbar styles */
+.navbar ul {
+    margin-bottom: 0px;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.navbar a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center; 
+}
+
+.navbar a:hover {
+    background-color: rgb(44, 43, 43);
+    text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
+}
+
+.navbar li {
+    float: left;
+}
+
+/* Typewriter effect */
+.typewriter {
+    font-size: 45px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typewriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin-left: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    text-align: left;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    background-color: black; /* Ensure the home section is black */
+}
+
+.home-image {
+    position: relative;
+    margin-top: 50px;
+    margin-left: 270px;
+    margin-bottom: 100px;
+}
+
+.home-text {
+    margin-left: 50px;
+    text-shadow: 1px 1px 5px #fff, 1px 1px 10px #ccc;
+}
+
+.home-description {
+    font-size: 20px;
+}
+
+.headerss{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: jus;
+}
+
+.profile{
+    margin-left:50px;
+    margin-right:50px;
+    text-align: justify;
+    font-size:20px;
+}
