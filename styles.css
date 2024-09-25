@@ -1,20 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
-    background-color: black !important; 
-}
-
-section {
-    background-color: black; /* Ensures that all sections are black */
-    color: white; /* Ensures that text is visible */
+    background-color: black !important;
+    color: white; 
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar styles */
 .navbar ul {
     margin-bottom: 0px;
     list-style-type: none;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: rgba(37, 37, 37, 0.99);
     padding: 0px;
     margin: 0px;
     overflow: hidden;
@@ -22,14 +21,19 @@ section {
 }
 
 .navbar a {
+    font-size: 18px;
     color: whitesmoke;
     text-decoration: none;
     padding: 15px;
     display: block;
     text-align: center; 
+    transition: background-color 0.3s;
+    transition: text-shadow 0.3s;
+    transition: font-size 0.3s;
 }
 
 .navbar a:hover {
+    font-size: 20px;
     background-color: rgb(44, 43, 43);
     text-shadow: 1px 1px 10px #fff, 1px 1px 10px #ccc;
 }
@@ -67,14 +71,14 @@ section {
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
-    background-color: black; /* Ensure the home section is black */
 }
 
 .home-image {
     position: relative;
-    margin-top: 50px;
-    margin-left: 270px;
+    margin-top: 150px;
     margin-bottom: 100px;
+    margin-left: 180px; 
+    margin-right: 0px;
 }
 
 .home-text {
@@ -86,15 +90,50 @@ section {
     font-size: 20px;
 }
 
-.headerss{
+.headerss {
     font-size: 50px;
     font-weight: bold;
-    text-align: jus;
+    margin-left: 50px;
+    margin-top: 0; 
+    margin-bottom: 10px; 
 }
 
-.profile{
+.profile {
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: justify;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px; 
+}
+
+.educational-background {
     margin-left:50px;
     margin-right:50px;
-    text-align: justify;
+    margin-bottom: 40px;
+    margin-top: 40px;
     font-size:20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 250px;
+    text-align: center; 
 }
+
+.entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entry img {
+    max-width: 150px; /* Adjust the size of the logos as needed */
+    height: auto;
+}
+
+
+.entry p {
+    margin: 5px 0; /* Adjusts the space between text lines */
+}
+
+
